@@ -79,10 +79,10 @@ void mainLoop()
     };
     SDL_RenderFillRects(renderer, rects, 2);
 
-    SDL_Point focusScreen{ static_cast<int>(GetFocusX() * GetSceneWidth()) + static_cast<int>((GetScreenWidth() - GetSceneWidth()) / 2), static_cast<int>(GetFocusY() * GetScreenHeight()) };
-    SDL_Rect rect{focusScreen.x - 2, focusScreen.y - 2, 4, 4};
-    SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-    SDL_RenderFillRect(renderer, &rect);
+    // SDL_Point focusScreen{ static_cast<int>(GetFocusX() * GetSceneWidth()) + static_cast<int>((GetScreenWidth() - GetSceneWidth()) / 2), static_cast<int>(GetFocusY() * GetScreenHeight()) };
+    // SDL_Rect rect{focusScreen.x - 2, focusScreen.y - 2, 4, 4};
+    // SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+    // SDL_RenderFillRect(renderer, &rect);
 
     SDL_RenderPresent(renderer);
 }
